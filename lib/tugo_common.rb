@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "tugo_common/version"
+require 'gruf'
+require 'gruf/stackdriver_trace'
+require 'jwt'
+require 'tugo_common/grpc_service'
+require 'tugo_common/version'
 
 module TugoCommon
   class Error < StandardError; end
